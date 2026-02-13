@@ -16,7 +16,7 @@ import {
   LoginAndVerifyOTP, updateBlogController, deleteBlogController, getBlogIdController, CreateChatController, findUserschatController, findchatController
   , EmailVerify, postman, PaymentResponse, PaymentRequest, getProductsByFilterUser, cancelOrderUser,completeOrderUser, ViewAllZones, ViewAllZonesOnly,getProductsByHSN, AuthUserByID, updateProfileUser, SignupNewUser, LoginUserWithOTP, LoginUserWithPass, SendOTP,SignupLoginNew, SignupLoginUser, getTaxIdUser, ViewAllUserTaxes, ViewCompareByUser, applyPromoCode, getHomeLayoutData, AddWishListByUser, deleteCompareByUser, deleteWishListByUser, ViewWishListByUser, AddCompareByUser, ViewProductRating, ViewCategoryRating, AddRating, UsergetAllCategories, UsergetAllProducts, UsergetAllHomeProducts,FullOrdersViewController, userOrdersViewController, getAllAttributeUser, getProductIdUser, updateUserLocationController,updateUserController, createOrderController, updateUserAndCreateOrderController, userOrdersController, getHomeData, GetAllCategoriesByParentIdController, GetAllCategoriesController,GetAllCategoriesBySlugController
   , BuyPlanUser, GetPlanUser, HomeSendEnquire,contactSendEnquire,HomeSendEnquireCatgeory,HomeReferralEnquire, getAllPlanCategoryController, uploadDataZone, deleteAllZones, SignupUserType, updateDetailsUser, updateDetailsUserHealth, getAllPlanUser, getProductIdUserBySlug
-  , getAllVendor, getAllDepartment, profileVendorImage, ApiGetKey, PaymentSuccess, PaymentFail,
+  , getAllVendor,findDistanceApi, getAllDepartment, profileVendorImage, ApiGetKey, PaymentSuccess, PaymentFail,
   updateVendorProfileUser,CheckoutWallet,profileDocImage,GetAllUser,UserAllgallery, WalletPaymentVerification,userOrderPayment,OrderPaymentVerification, paymentVerification,AllUserByDetails, BuyPlanAddUser, BuyPlanByUser,BuyPlanByUserFree, PayuHash, userPlanIdController,ViewAllZonesCategory, ViewAllZonesDepartment, getVendorById, HomeSendvendorEnquire, ApplyEnquireStatus, SenderEnquireStatus, AllPayment,downloadVendorInvoice, downloadVendorOrderInvoice,downloadUserOrderInvoice,downloadUserInvoice, checkUserPlan, GetWebsiteData, GetWebsiteData_old
 } from "../controller/userController.js"
 import authenticateToken from "../middleware/authMiddleware.js";
@@ -458,7 +458,8 @@ router.post(
   WalletPaymentVerification
 );
 
- 
+ router.post("/api/find-distance/", findDistanceApi);
+
 
 
 router.get("/admin/all-healthcard", AdminAllEnquireStatus);

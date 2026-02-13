@@ -3009,7 +3009,7 @@ export const GetAllCategoriesController = async (req, res) => {
     const products = await productModel
       .find(filters)
       .select(
-        "_id title regularPrice salePrice pImage variations slug features userId images"
+        "_id title regularPrice salePrice pImage variations slug features userId images Category"
       )
       .populate("userId", "username phone email coverage")
       .skip(skip)
@@ -10675,3 +10675,34 @@ export const UserAllgallery = async (req, res) => {
     });
   }
 };
+
+
+export const findDistanceApi = async (req, res) => {
+  console.log(req.body);
+
+  try {
+    const { pickup, dropoff } = req.body;
+    const key = "AIzaSyCcppZWLo75ylSQvsR-bTPZLEFEEec5nrY"; // Use server key
+
+    const response = await axios.get(
+      `https://maps.googleapis.com/maps/api/distancematrix/json?destinations=${dropoff}&origins=${pickup}&units=metric&key=${key}`
+    );
+
+    // Extracting distance from response
+    const distance = response.data.rows[0].elements[0].distance.text;
+
+    res.status(200).json({
+      success: true,
+      message: "Distance fetched successfully",
+      data: response.data,
+    });
+  } catch (error) {
+    console.error("Error fetching distance:", error);
+    res.status(500).json({
+      success: false,
+      message: "Error occurred while processing the request",
+      error: error.message, // Sending the error message back to the client
+    });
+  }
+};
+
