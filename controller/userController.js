@@ -4195,14 +4195,15 @@ export const SignupLoginUser_old = async (req, res) => {
 
         // block
         console.log(otp);
-   const otpResult =   await sendLogOTP(phone, otp);
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+
+//    const otpResult =   await sendLogOTP(phone, otp);
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
 
 
         return res.status(201).json({
@@ -4226,14 +4227,15 @@ if (!otpResult.ok) {
 
       // block
       console.log(otp);
-     const otpResult =   await sendLogOTP(phone, otp);
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+
+//      const otpResult =   await sendLogOTP(phone, otp);
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
 
       return res.status(200).json({
         success: true,
@@ -4308,14 +4310,14 @@ export const SignupLoginUser = async (req, res) => {
         console.log(otp,type);
         
       if(type !== 'new'){
-        const otpResult =   await sendLogOTP(phone, otp);
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+//         const otpResult =   await sendLogOTP(phone, otp);
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
       }
      
 
@@ -4343,16 +4345,17 @@ if (!otpResult.ok) {
       console.log(otp,type);
 
       if(type !== 'new'){
-      const otpResult =   await sendLogOTP(phone, otp);
-  
-                
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+
+
+      // const otpResult =   await sendLogOTP(phone, otp);
+   
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
 
       }
 
@@ -4428,14 +4431,14 @@ export const SignupLoginNew = async (req, res) => {
 
         // block
         console.log(otp);
-        const otpResult =   await sendLogOTP(phone, otp);
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+//         const otpResult =   await sendLogOTP(phone, otp);
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
 
 
         return res.status(201).json({
@@ -4463,14 +4466,15 @@ if (!otpResult.ok) {
 
       // block
       console.log(otp);
-     const otpResult =   await sendLogOTP(phone, otp);
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+      
+//      const otpResult =   await sendLogOTP(phone, otp);
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
 
       return res.status(200).json({
         success: true,
@@ -4574,14 +4578,15 @@ export const LoginUserWithOTP = async (req, res) => {
 
       // block
       console.log(otp);
-       const otpResult =   await sendLogOTP(phone, otp);
-// ❌ OTP NOT SENT → return 400
-if (!otpResult.ok) {
-  return res.status(400).json({
-    success: false,
-    message: "Failed to send OTP. Please try again.",
-  });
-}
+
+//        const otpResult =   await sendLogOTP(phone, otp);
+// // ❌ OTP NOT SENT → return 400
+// if (!otpResult.ok) {
+//   return res.status(400).json({
+//     success: false,
+//     message: "Failed to send OTP. Please try again.",
+//   });
+// }
 
 
       return res.status(201).json({
