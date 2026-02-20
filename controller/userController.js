@@ -7831,7 +7831,7 @@ src="${logo}"
         <tbody>
  
             <tr   >
-              <td style="text-align: left;" > <b> IT Support & Helper Charges  </b>
+              <td style="text-align: left;" > <b> IT Support  </b>
                 <p style="
     border-top: 1px dashed grey;
     width: 50%;
@@ -8369,7 +8369,7 @@ src="https://backend-olxs.onrender.com/uploads/new/image-1755174201972.webp"
         <tbody>
  
             <tr   >
-              <td style="text-align: left;" > <b> IT Support & Helper Charges </b>
+              <td style="text-align: left;" > <b> IT Support </b>
                 <p style="
     border-top: 1px dashed grey;
     width: 50%;
@@ -8654,7 +8654,7 @@ src="https://backend-olxs.onrender.com/uploads/new/image-1750835801961.webp"
         <tbody>
  
             <tr   >
-              <td style="text-align: left;" > <b> IT Support & Helper Charges  </b>
+              <td style="text-align: left;" > <b> IT Support  </b>
                 <p style="
     border-top: 1px dashed grey;
     width: 50%;
