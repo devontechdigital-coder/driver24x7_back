@@ -1382,7 +1382,7 @@ async function sendOrderConfirmationEmail(email, username, userId, newOrder) {
       from: process.env.MAIL_FROM_ADDRESS, // Update with your email address
       to: email, // Update with your email address
       cc: process.env.MAIL_FROM_ADDRESS,
-      subject: "www.thehelply.com Order Confirmation",
+      subject: "www.thedrivers24x7.co.in Order Confirmation",
 
       //   html: `
 
@@ -1600,7 +1600,7 @@ async function sendOrderConfirmationEmail(email, username, userId, newOrder) {
           <strong style="display:block;margin:0 0 10px 0;">Regards</strong> 
           
           <address><strong class="mb-2"> The Helply </strong><br>
-          <b title="Phone" class="mb-2">Web:</b>www.thehelply.com <br></address>
+          <b title="Phone" class="mb-2">Web:</b>www.thedrivers24x7.co.in <br></address>
          
         </td>
       </tr>
@@ -1644,7 +1644,7 @@ export const EmailVerify = async (req, res) => {
   const mailOptions = {
     from: process.env.MAIL_FROM_ADDRESS, // Update with your email address
     to: email, // Update with your email address
-    subject: "OTP Verification thehelply.com",
+    subject: "OTP Verification thedrivers24x7.co.in",
     text: `OTP: ${OTP}`,
   };
 
@@ -1700,7 +1700,7 @@ export const EmailVerify_new = async (req, res) => {
     const info = await transporter.sendMail({
       from: `"${process.env.MAIL_FROM_NAME || "Thehelply"}" <${fromAddress}>`,
       to: email,
-      subject: "OTP Verification - Thehelply.com",
+      subject: "OTP Verification - Thedrivers24x7.co.in",
       text: `Your OTP is ${OTP}`,
       html: `<div style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:16px;line-height:1.5">
                <p>Dear user,</p>
@@ -3921,7 +3921,7 @@ const sendLogOTP_serverdown = async (phone, otp) => {
       unicode: false,
       from: "HELPLY",
       to: phone,
-      text: `Here is your OTP ${otp} for your account Signup on https://thehelply.com/. Please do not share this code with anyone`,
+      text: `Here is your OTP ${otp} for your account Signup on https://thedrivers24x7.co.in/. Please do not share this code with anyone`,
     });
     const url = `https://pgapi.smartping.ai/fe/api/v1/send?${queryParams}`;
 
@@ -3958,7 +3958,7 @@ const sendLogOTP = (phone, otp) => {
       unicode: false,
       from: "HELPLY",
       to: phone,
-      text: `Here is your OTP ${otp} for your account Signin on https://thehelply.com/. Please do not share this code with anyone.. Helply`,
+      text: `Here is your OTP ${otp} for your account Signin on https://thedrivers24x7.co.in/. Please do not share this code with anyone.. Helply`,
     });
 
     const url = `https://pgapi.smartping.ai/fe/api/v1/send?${queryParams}`;
@@ -4003,7 +4003,7 @@ const sendLogOTP_old = (phone, otp) => {
       unicode: false,
       from: "HELPLY",
       to: phone,
-      text: `Here is your OTP ${otp} for your account Signup on https://thehelply.com/. Please do not share this code with anyone`,
+      text: `Here is your OTP ${otp} for your account Signup on https://thedrivers24x7.co.in/. Please do not share this code with anyone`,
     });
 
     const url = `https://pgapi.smartping.ai/fe/api/v1/send?${queryParams}`;
@@ -7759,10 +7759,10 @@ src="${logo}"
         
         </div>
         <div class="invoice-header-right">
-          <h2 style="margin-top:0px;">Helply.com</h2>
+          <h2 style="margin-top:0px;">Drivers24x7.co.in</h2>
  <p> New Delhi 110045 </p>
-<p> Contact - +91-9876543210 </p>
-  <p> Email : support@helply.com </p>
+<p> Contact - +91-8750080303 </p>
+  <p> Email : support@drivers24x7.co.in </p>
          
                          
         </div>
@@ -8009,10 +8009,10 @@ src="${meta_logo}"
         
         </div>
         <div class="invoice-header-right">
-          <h2 style="margin-top:0px;">Helply.com</h2>
+          <h2 style="margin-top:0px;">Drivers24x7.co.in</h2>
  <p> New Delhi 110045 </p>
-<p> Contact - +91-9876543210 </p>
-  <p> Email : support@helply.com </p>
+<p> Contact - +91-8750080303 </p>
+  <p> Email : support@drivers24x7.co.in </p>
          
                          
         </div>
@@ -8290,10 +8290,10 @@ src="https://backend-olxs.onrender.com/uploads/new/image-1755174201972.webp"
         
         </div>
         <div class="invoice-header-right">
-          <h2 style="margin-top:0px;">Helply.com</h2>
+          <h2 style="margin-top:0px;">Drivers24x7.co.in</h2>
  <p> New Delhi 110045 </p>
-<p> Contact - +91-9876543210 </p>
-  <p> Email : support@helply.com </p>
+<p> Contact - +91-8750080303 </p>
+  <p> Email : support@drivers24x7.co.in </p>
          
                          
         </div>
@@ -8575,10 +8575,10 @@ src="https://backend-olxs.onrender.com/uploads/new/image-1750835801961.webp"
         
         </div>
         <div class="invoice-header-right">
-          <h2 style="margin-top:0px;">Helply.com</h2>
+          <h2 style="margin-top:0px;">Drivers24x7.co.in</h2>
  <p> New Delhi 110045 </p>
-<p> Contact - +91-9876543210 </p>
-  <p> Email : support@helply.com </p>
+<p> Contact - +91-8750080303 </p>
+  <p> Email : support@drivers24x7.co.in </p>
          
                          
         </div>
@@ -8838,10 +8838,10 @@ src="${logo}"
         
         </div>
         <div class="invoice-header-right">
-          <h2 style="margin-top:0px;">Helply.com</h2>
+          <h2 style="margin-top:0px;">Drivers24x7.co.in</h2>
  <p> New Delhi 110045 </p>
-<p> Contact - +91-9876543210 </p>
-  <p> Email : support@helply.com </p>
+<p> Contact - +91-8750080303 </p>
+  <p> Email : support@drivers24x7.co.in </p>
          
                          
         </div>
